@@ -24,7 +24,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
-public class Avanzado extends JFrame {
+public class Avanzado extends JFrame implements MouseListener{
 
 	/**
 	 * 
@@ -112,7 +112,6 @@ public class Avanzado extends JFrame {
 				try {
 					avanzado = new Avanzado();
 					colors();
-					addEventos();
 					Primerajugada();
 					avanzado.setVisible(true);
 				} catch (Exception e) {
@@ -561,6 +560,35 @@ public class Avanzado extends JFrame {
 		textField_71.setColumns(10);
 		textField_71.setBounds(505, 282, 42, 38);
 		contentPane.add(textField_71);
+		
+		textField_8.addMouseListener(this);
+		textField_9.addMouseListener(this);
+		textField_10.addMouseListener(this);
+		textField_11.addMouseListener(this);
+		textField_16.addMouseListener(this);
+		textField_17.addMouseListener(this);
+		textField_18.addMouseListener(this);
+		textField_19.addMouseListener(this);
+		textField_20.addMouseListener(this);
+		textField_21.addMouseListener(this);
+		textField_22.addMouseListener(this);
+		textField_23.addMouseListener(this);
+		textField_24.addMouseListener(this);
+		textField_25.addMouseListener(this);
+		textField_26.addMouseListener(this);
+		textField_27.addMouseListener(this);
+		textField_28.addMouseListener(this);
+		textField_29.addMouseListener(this);
+		textField_30.addMouseListener(this);
+		textField_31.addMouseListener(this);
+		textField_32.addMouseListener(this);
+		textField_33.addMouseListener(this);
+		textField_34.addMouseListener(this);
+		textField_35.addMouseListener(this);
+
+		
+		
+		
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -854,727 +882,41 @@ public class Avanzado extends JFrame {
 		textField_7.setBackground(colores[r.nextInt(6)]);
 	}
 
-	public static void addEventos() {
-		textField_8.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_8.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_8.setBackground(colores[count]);
-					count++;
-				}
-			}
 
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
 
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_9.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_9.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_9.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_10.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_10.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_10.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_11.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_11.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_11.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_16.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_16.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_16.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_17.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_17.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_17.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_18.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_18.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_18.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_19.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_19.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_19.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_20.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_20.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_20.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_21.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_21.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_21.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_22.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_22.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_22.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_23.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_23.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_23.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_24.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_24.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_24.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_25.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_25.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_25.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_26.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_26.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_26.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_27.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_27.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_27.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_28.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_28.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_28.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_29.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_29.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_29.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_30.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_30.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_30.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_31.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_31.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_31.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_32.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_32.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_32.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_33.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_33.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_33.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_34.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_34.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_34.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_35.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 6) {
-					textField_35.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_35.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		if (count < 6) {
+			e.getComponent().setBackground(colores[count]);
+			count++;
+		} else {
+			count = 0;
+			e.getComponent().setBackground(colores[count]);
+			count++;
+		}		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
 }
